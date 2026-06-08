@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codexia — Project | Agustina Lorda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="text-decoration:none;">
+      <div class="nav-logo-mark">AL</div>
+      <span>Agustina Lorda</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"><i class="ti ti-home"></i> Home</a>
+  <a href="projects.html"><i class="ti ti-layout-grid"></i> Projects</a>
+</div>
+
+<!-- ══════════════════ PAGE 4: CODEXIA ══════════════════ -->
+<div class="page" id="page-project2">
+  <div class="project-page-hero">
+    <div class="grid-bg"></div>
+    <div class="project-page-hero-inner" style="position:relative;z-index:1;">
+      <a class="back-link" href="projects.html">
+        <i class="ti ti-arrow-left"></i> Back to Projects
+      </a>
+      <div class="section-tag">Project 02 — Codexia</div>
+      <h1 class="project-title-lg">Codexia</h1>
+      <p class="project-subtitle-lg">AI Powered Accessible Coding Platform for Dyslexic Learners</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <!-- Video Showcase -->
+    <div class="video-showcase-container">
+      <div class="video-showcase codexia-showcase">
+        <div class="showcase-video-header">
+          <div id="codexia-video-label" class="video-label">Non-AI Features</div>
+          <button id="codexia-toggle-video" class="video-toggle-btn" aria-label="Switch video">
+            <i class="ti ti-arrow-right"></i>
+            <span>Switch video</span>
+          </button>
+        </div>
+        <video
+          id="codexia-feature-video"
+          src="assets/gallery/NonAI-Codexia.mp4"
+          controls
+          playsinline
+          preload="auto"
+          style="width:100%;object-fit:cover;">
+          Your browser does not support this video format.
+        </video>
+      </div>
+      <div class="showcase-image">
+        <div class="showcase-award-text">
+          <span class="tag amber">🏆 Honorable Mention, 2026 Lincoln University Undergraduate Research Symposium</span>
+        </div>
+        <img src="assets/gallery/Award-Codexia.jpeg" alt="Codexia award presentation">
+      </div>
+    </div>
+
+    <!-- Award Banner -->
+    <div class="award-block">
+      <div class="award-block-header">
+        <i class="ti ti-trophy award-icon"></i>
+        <div class="award-block-title">Honorable Mention — 2026 Lincoln University Undergraduate Research Symposium</div>
+      </div>
+      <p>Codexia received an Honorable Mention at the 2026 Lincoln University Undergraduate Research Symposium after earning a perfect evaluation score from the judges. The project was recognized for its innovative combination of accessibility focused design, artificial intelligence, and educational technology aimed at supporting students with dyslexia in computer science learning.</p>
+    </div>
+
+    <!-- Description -->
+    <div class="content-block">
+      <div class="content-block-title">Project Description</div>
+      <p>Codexia is a full stack web application designed to make computer science education more accessible for students with dyslexia and other learning differences. The platform combines accessibility focused design with AI powered assistance, allowing users to write code, customize how code is displayed, execute programs, and receive beginner friendly explanations of both code and errors.</p>
+      <br>
+      <p>The application was built to address a common challenge in computer science education. Traditional coding environments often increase cognitive load through dense text, technical error messages, and limited accessibility options. Codexia reduces these barriers by giving users control over font styles, colors, and text size while providing AI generated explanations that simplify complex programming concepts. The platform also includes a collection of practice coding problems and text to speech support, creating a more inclusive learning experience for aspiring programmers.</p>
+    </div>
+
+    <div class="project-grid-2">
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">System Architecture</div>
+          <p>The frontend was developed using HTML, CSS, and JavaScript and handles code editing, execution, accessibility customization, and user interaction. Accessibility settings update instantly, allowing users to personalize the appearance of code based on their individual preferences.
+
+The backend was built with FastAPI and serves as the central controller for AI requests and application logic. It securely communicates with the Google Gemini API, applies custom prompts designed for beginner learners, processes responses, and returns structured explanations to the frontend without exposing API credentials.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">AI Design Decisions</div>
+          <p>Google Gemini 2.5 Flash was integrated to provide personalized explanations for both code behavior and programming errors. Since every student can write different code and encounter unique mistakes, traditional rule based explanations would not be sufficient.
+
+To reduce cognitive overload, the AI was carefully guided through a custom system prompt. Responses are limited to six clearly organized steps, use simple language, avoid unnecessary technical jargon, and follow a consistent format that is easier for dyslexic learners to follow. This approach prioritizes understanding and learning rather than simply providing answers.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="content-block">
+      <div class="content-block-title">Core Metrics & Results</div>
+      <div class="metrics-grid">
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">100<span class="metric-unit">/100</span></div>
+          <div class="metric-label">PERFECT JUDGE SCORE</div>
+        </div>
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">60</div>
+          <div class="metric-label">PRACTICE CODING PROBLEMS</div>
+        </div>
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">5</div>
+          <div class="metric-label">CORE PLATFORM FEATURES</div>
+        </div>
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">2</div>
+          <div class="metric-label">AI ASSISTANCE TOOLS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="content-block">
+      <div class="content-block-title">Technologies Used</div>
+      <div class="tech-grid">
+        <span class="tech-chip"><i class="ti ti-brand-html5" style="color:#e34c26"></i> HTML5</span>
+        <span class="tech-chip"><i class="ti ti-brand-css3" style="color:#264de4"></i> CSS3</span>
+        <span class="tech-chip"><i class="ti ti-brand-javascript" style="color:var(--amber)"></i> JavaScript</span>
+        <span class="tech-chip"><i class="ti ti-brand-python" style="color:#3776ab"></i> Python</span>
+        <span class="tech-chip"><i class="ti ti-server" style="color:var(--accent)"></i> FastAPI</span>
+        <span class="tech-chip"><i class="ti ti-brain" style="color:var(--emerald)"></i> Google Gemini 2.5 Flash</span>
+        <span class="tech-chip"><i class="ti ti-volume" style="color:var(--emerald)"></i> Web Speech API</span>
+        <span class="tech-chip"><i class="ti ti-file-code" style="color:var(--text2)"></i> JSON (Practice Problems)</span>
+        <span class="tech-chip"><i class="ti ti-git-branch" style="color:var(--accent)"></i> Git / GitHub</span>
+      </div>
+    </div>
+
+    <!-- GitHub CTA -->
+    <div class="github-cta">
+      <div class="github-cta-text">
+        <p>Explore the Source Code</p>
+        <span>Full codebase available on GitHub</span>
+      </div>
+      <a href="https://github.com/AgustinaLorda/Codexia" target="_blank" class="btn btn-ghost btn-lg">
+        <i class="ti ti-brand-github"></i>
+        View on GitHub
+        <i class="ti ti-external-link" style="font-size:0.85rem;"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

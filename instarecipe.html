@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InstaRecipe — Project | Agustina Lorda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="text-decoration:none;">
+      <div class="nav-logo-mark">AL</div>
+      <span>Agustina Lorda</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"><i class="ti ti-home"></i> Home</a>
+  <a href="projects.html"><i class="ti ti-layout-grid"></i> Projects</a>
+</div>
+
+<!-- ══════════════════ PAGE 3: INSTARECIPE ══════════════════ -->
+<div class="page" id="page-project1">
+  <div class="project-page-hero">
+    <div class="grid-bg"></div>
+    <div class="project-page-hero-inner" style="position:relative;z-index:1;">
+      <a class="back-link" href="projects.html">
+        <i class="ti ti-arrow-left"></i> Back to Projects
+      </a>
+      <div class="section-tag">Project 01 — InstaRecipe</div>
+      <h1 class="project-title-lg">InstaRecipe</h1>
+      <p class="project-subtitle-lg">AI Powered Recipe Discovery Platform and Community for Smarter Meal Planning</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <!-- Video Showcase -->
+    <div class="video-showcase">
+      <video controls muted playsinline preload="metadata" style="width:100%;height:100%;object-fit:contain;">
+        <source src="assets/gallery/InstaRecipeVideo.mp4" type="video/mp4">
+        Your browser does not support this video format.
+      </video>
+    </div>
+
+    <!-- Description -->
+    <div class="content-block">
+      <div class="content-block-title">Project Description</div>
+      <p>InstaRecipe is a full stack web application designed to help users make faster and smarter cooking decisions using ingredients they already have at home. The platform combines AI powered recipe recommendations with a community driven recipe database, helping users reduce food waste, save time, and discover new meal ideas. The project was inspired by two common challenges: the large amount of food discarded each year and the time many people spend deciding what to cook.</p>
+      <br>
+      <p>Users can receive personalized recipe suggestions by entering available ingredients, while registered members gain access to advanced features including recipe search, filtering, recipe uploads, favorites, ratings, reviews, and personalized recommendations. Built with React and Supabase, the platform supports recipe creation, image uploads, draft management, and community engagement through a modern and responsive user experience. My contribution focused on frontend development, including the user interface, authentication flows, responsive layouts, and integration with backend services.</p>
+    </div>
+
+    <div class="project-grid-2">
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">System Architecture</div>
+          <p>React powers the frontend experience, handling routing, state management, search functionality, and user interactions. Supabase provides authentication, PostgreSQL database storage, image hosting, and backend services. The OpenAI API powers ingredient based recipe recommendations, generating personalized suggestions from ingredients entered by the user. Together, these components create a scalable platform that combines AI assisted meal planning with community generated content.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">Key Features</div>
+          <p>AI recipe recommendations based on available ingredients • Advanced recipe search with filters for cuisine, diet, difficulty, cooking time, and meal type • Recipe uploads with images, ingredients, and step by step instructions • Save draft or publish workflow • User authentication and personalized dashboards • Favorites system with personalized suggestions • Community ratings and reviews • Trending recipes and recipe discovery tools</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="content-block">
+      <div class="content-block-title">Core Metrics & Results</div>
+      <div class="metrics-grid">
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">30–40<span class="metric-unit">%</span></div>
+          <div class="metric-label">U.S. FOOD SUPPLY WASTED ANNUALLY ADDRESSED BY THE PROJECT MISSION</div>
+        </div>
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">43<span class="metric-unit">min</span></div>
+          <div class="metric-label">AVERAGE DAILY MEAL DECISION TIME TARGETED</div>
+        </div>
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">2</div>
+          <div class="metric-label">USER ROLES WITH DIFFERENT ACCESS LEVELS</div>
+        </div>
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">8<span class="metric-unit">+</span></div>
+          <div class="metric-label">CORE PLATFORM FEATURES INCLUDING AI, SEARCH, UPLOADS, FAVORITES, AND REVIEWS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="content-block">
+      <div class="content-block-title">Technologies Used</div>
+      <div class="tech-grid">
+        <span class="tech-chip"><i class="ti ti-brand-react" style="color:var(--accent)"></i> React.js</span>
+        <span class="tech-chip"><i class="ti ti-brand-javascript" style="color:var(--amber)"></i> JavaScript</span>
+        <span class="tech-chip"><i class="ti ti-brand-html5" style="color:#e34c26"></i> HTML5</span>
+        <span class="tech-chip"><i class="ti ti-brand-css3" style="color:#264de4"></i> CSS3</span>
+        <span class="tech-chip"><i class="ti ti-brain" style="color:var(--emerald)"></i> OpenAI API</span>
+        <span class="tech-chip"><i class="ti ti-database" style="color:#3fcf8e"></i> Supabase</span>
+        <span class="tech-chip"><i class="ti ti-git-branch" style="color:var(--accent)"></i> Git / GitHub</span>
+      </div>
+    </div>
+
+    <!-- GitHub CTA -->
+    <div class="github-cta">
+      <div class="github-cta-text">
+        <p>Explore the Source Code</p>
+        <span>Full codebase available on GitHub</span>
+      </div>
+      <a href="https://github.com/AgustinaLorda/InstaRecipe" target="_blank" class="btn btn-ghost btn-lg">
+        <i class="ti ti-brand-github"></i>
+        View on GitHub
+        <i class="ti ti-external-link" style="font-size:0.85rem;"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

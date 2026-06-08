@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Agustina Lorda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="text-decoration:none;">
+      <div class="nav-logo-mark">AL</div>
+      <span>Agustina Lorda</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"><i class="ti ti-home"></i> Home</a>
+  <a href="projects.html"><i class="ti ti-layout-grid"></i> Projects</a>
+</div>
+
+<!-- ══════════════════ PAGE 2: PROJECTS HUB ══════════════════ -->
+<div class="page" id="page-projects">
+  <div class="projects-hero">
+    <div class="grid-bg"></div>
+    <div class="projects-hero-inner" style="position:relative;z-index:1;">
+      <div class="section-tag">Portfolio</div>
+      <h2 class="section-title" style="margin-bottom:0.5rem;">Featured Engineering &<br>Data Science Projects</h2>
+      <p class="section-sub">End-to-end systems: from idea to deployed product.</p>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:3rem;">
+    <div class="projects-grid">
+<a class="project-card fade-in" href="phishing-email-detector.html">
+        <div class="project-card-img">
+          <div class="project-card-mockup mockup-ml">
+            <div class="mock-ml-title">Model Evaluation Dashboard</div>
+            <div class="mock-stat-row">
+              <div class="mock-stat-box">
+                <div class="mock-stat-val">97.7%</div>
+                <div class="mock-stat-lbl">ACCURACY</div>
+              </div>
+              <div class="mock-stat-box">
+                <div class="mock-stat-val">99.1%</div>
+                <div class="mock-stat-lbl">PRECISION</div>
+              </div>
+              <div class="mock-stat-box">
+                <div class="mock-stat-val">97.0%</div>
+                <div class="mock-stat-lbl">RECALL</div>
+              </div>
+            </div>
+            <div class="mock-progress-group">
+              <div class="mock-progress-item">
+                <div class="mock-progress-label"><span>Logistic Reg.</span><span>97.7%</span></div>
+                <div class="mock-progress-track"><div class="mock-progress-fill" style="width:97.7%;background:linear-gradient(90deg,var(--amber),#f0c060);"></div></div>
+              </div>
+              <div class="mock-progress-item">
+                <div class="mock-progress-label"><span>Random Forest</span><span>97.2%</span></div>
+                <div class="mock-progress-track"><div class="mock-progress-fill" style="width:97.2%;background:rgba(245,166,35,0.6);"></div></div>
+              </div>
+              <div class="mock-progress-item">
+                <div class="mock-progress-label"><span>SVM</span><span>97.5%</span></div>
+                <div class="mock-progress-track"><div class="mock-progress-fill" style="width:97.5%;background:rgba(245,166,35,0.4);"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">Phishing Email Detector</h3>
+          <p class="project-card-subtitle">Machine learning system detecting phishing emails with 97.7% accuracy.</p>
+          <p class="project-card-tech">Python • Scikit-learn • Gmail API</p>
+          <p class="project-card-award">🏆 Best Poster Award</p>
+          <span class="project-card-link">View Project <span class="project-card-arrow">→</span></span>
+        </div>
+      </a>
+
+<a class="project-card fade-in" href="codexia.html">
+        <div class="project-card-img">
+          <div class="project-card-mockup mockup-codexia">
+            <div class="mock-code-editor">
+              <div class="mock-code-header">
+                <div class="mock-code-tab">main.py</div>
+                <div class="mock-code-tab" style="background:transparent;opacity:.4;">output</div>
+              </div>
+              <div class="mock-code-body">
+                <div class="mock-code-line"><span class="mock-ln">1</span><span class="ck">def</span> <span class="cv">greet</span><span class="co">(</span><span class="cn">name</span><span class="co">):</span></div>
+                <div class="mock-code-line"><span class="mock-ln">2</span><span style="padding-left:12px;"></span><span class="cs">"Say hello"</span></div>
+                <div class="mock-code-line"><span class="mock-ln">3</span><span style="padding-left:12px;"></span><span class="ck">return</span> <span class="cs">f"Hello, </span><span class="cv">{name}</span><span class="cs">!"</span></div>
+                <div class="mock-code-line"><span class="mock-ln">4</span></div>
+                <div class="mock-code-line"><span class="mock-ln">5</span><span class="cv">print</span><span class="co">(</span><span class="cv">greet</span><span class="co">(</span><span class="cs">"World"</span><span class="co">))</span></div>
+              </div>
+            </div>
+            <div class="mock-ai-panel">
+              <div class="mock-ai-title">
+                <div class="mock-ai-dot"></div>
+                AI Explanation
+              </div>
+              <div class="mock-ai-text">This function takes a name and returns a greeting string using Python's f-string formatting...</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">Codexia</h3>
+          <p class="project-card-subtitle">Accessible coding platform featuring AI explanations and text-to-speech support.</p>
+          <p class="project-card-tech">FastAPI • Gemini AI</p>
+          <p class="project-card-award">🏆 Honorable Mention 2026</p>
+          <span class="project-card-link">View Project <span class="project-card-arrow">→</span></span>
+        </div>
+      </a>
+
+<a class="project-card fade-in" href="instarecipe.html">
+        <div class="project-card-img">
+          <div class="project-card-mockup mockup-instarecipe">
+            <div class="mock-topbar">
+              <div class="mock-logo-text">InstaRecipe</div>
+              <div class="mock-nav-dots">
+                <div class="mock-nav-dot a"></div>
+                <div class="mock-nav-dot"></div>
+                <div class="mock-nav-dot"></div>
+              </div>
+            </div>
+            <div class="mock-search-bar">
+              <span class="mock-search-text">tomato, basil, mozzarella...</span>
+              <span class="mock-search-icon">⌘</span>
+            </div>
+            <div class="mock-recipe-grid">
+              <div class="mock-recipe-card">
+                <div class="mock-recipe-img">🍕</div>
+                <div class="mock-recipe-title">Margherita Pizza</div>
+                <div class="mock-stars">
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                  <div class="mock-star"></div><div class="mock-star"></div><div class="mock-star"></div>
+                </div>
+              </div>
+              <div class="mock-recipe-card">
+                <div class="mock-recipe-img" style="background:linear-gradient(135deg,#2a5e3a,rgba(0,229,160,0.3))">🥗</div>
+                <div class="mock-recipe-title">Caprese Salad</div>
+                <div class="mock-stars">
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                </div>
+              </div>
+              <div class="mock-recipe-card">
+                <div class="mock-recipe-img" style="background:linear-gradient(135deg,#3d2200,rgba(245,166,35,0.3))">🍝</div>
+                <div class="mock-recipe-title">Tomato Pasta</div>
+                <div class="mock-stars">
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                  <div class="mock-star"></div><div class="mock-star"></div><div class="mock-star"></div>
+                </div>
+              </div>
+              <div class="mock-recipe-card">
+                <div class="mock-recipe-img" style="background:linear-gradient(135deg,#3a1a1a,rgba(200,60,60,0.3))">🫕</div>
+                <div class="mock-recipe-title">Bruschetta</div>
+                <div class="mock-stars">
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                  <div class="mock-star"></div><div class="mock-star"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3 class="project-card-title">InstaRecipe</h3>
+          <p class="project-card-subtitle">AI-powered recipe recommendation platform based on available ingredients.</p>
+          <p class="project-card-tech">React • OpenAI • Supabase</p>
+          <span class="project-card-link">View Project <span class="project-card-arrow">→</span></span>
+        </div>
+      </a>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>

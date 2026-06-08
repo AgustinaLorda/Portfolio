@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phishing Detector — Project | Agustina Lorda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/tabler-icons.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/main.js"></script>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html" style="text-decoration:none;">
+      <div class="nav-logo-mark">AL</div>
+      <span>Agustina Lorda</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" id="nav-home">Home</a></li>
+      <li><a href="projects.html" id="nav-projects">Projects</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html"><i class="ti ti-home"></i> Home</a>
+  <a href="projects.html"><i class="ti ti-layout-grid"></i> Projects</a>
+</div>
+
+<!-- ══════════════════ PAGE 5: ML PHISHING ══════════════════ -->
+<div class="page" id="page-project3">
+  <div class="project-page-hero">
+    <div class="grid-bg"></div>
+    <div class="project-page-hero-inner" style="position:relative;z-index:1;">
+      <a class="back-link" href="projects.html">
+        <i class="ti ti-arrow-left"></i> Back to Projects
+      </a>
+      <div class="section-tag">Project 03 — Phishing Email Detector</div>
+      <h1 class="project-title-lg">Phishing Email Detector</h1>
+      <p class="project-subtitle-lg">Machine Learning Cybersecurity System — 49,628 Emails · 8 Models Evaluated · Real-Time Gmail Detection</p>
+    </div>
+  </div>
+
+  <div class="project-body">
+    <!-- Video Showcase with Conference Image -->
+    <div class="video-showcase-container">
+      <div class="video-showcase">
+        <video
+          src="assets/gallery/phishing-email-detector-video.mp4"
+          controls
+          playsinline
+          preload="auto"
+          style="width:100%;height:100%;object-fit:cover;">
+          Your browser does not support this video format.
+        </video>
+      </div>
+      <div class="showcase-image">
+        <div class="showcase-award-text">
+          <span class="tag amber">🏆 Best Undergraduate Poster Award, Delaware Data Science Symposium 2025</span>
+        </div>
+        <img src="assets/gallery/phishing-conference.jpeg" alt="Phishing Email Detector Conference Presentation">
+      </div>
+    </div>
+
+    <!-- Award Banner -->
+    <div class="award-block">
+      <div class="award-block-header">
+        <i class="ti ti-medal award-icon"></i>
+        <div class="award-block-title">Best Undergraduate Poster Award — Delaware Data Science Symposium 2025</div>
+      </div>
+      <p>This research was conducted as part of the DaMAD-ScientistCorps Summer Research Program (May–June 2025) under supervisor Dejene Dedefa, and was presented at the Delaware Data Science Symposium 2025, where it received the Best Undergraduate Poster Award for its rigorous methodology and real-world cybersecurity application.</p>
+    </div>
+
+    <!-- Description -->
+    <div class="content-block">
+      <div class="content-block-title">Project Description</div>
+      <p>Deployed the top-performing machine learning models and TF-IDF vectorizer as serialized artifacts for efficient inference. Built a desktop application using Python Tkinter and integrated the Gmail API with OAuth authentication to support real-time email retrieval and classification. Users can fetch emails directly from Gmail, select prediction models, execute the full detection pipeline, review results in an interactive table, and visualize confusion matrices and performance metrics through a unified interface.</p>
+      <br>
+      <p>The project covered the complete machine learning workflow, including feature engineering, model training, evaluation, and application development. Eight machine learning models were evaluated across supervised and unsupervised approaches, with supervised models consistently delivering superior performance. The final result was an interactive desktop application that allows users to fetch emails, compare model predictions, and analyze phishing detection performance.</p>
+    </div>
+
+    <div class="project-grid-2">
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">Feature Engineering</div>
+          <p>Engineered more than 20 phishing specific features from both email content and metadata, including link analysis, suspicious keyword detection, message length, sender domain verification, public domain identification, domain mismatch detection, and unknown domain classification. Subject and body text were transformed using TF-IDF vectorization using the top 300 features and combined with handcrafted indicators to create a unified feature matrix for model training. Analysis revealed that 99.8% of phishing emails originated from previously unknown sender domains, making domain based features one of the strongest predictors in the system.</p>
+        </div>
+      </div>
+      <div>
+        <div class="content-block">
+          <div class="content-block-title">Deployment & GUI</div>
+          <p>Built a desktop application using Python Tkinter and integrated the Gmail API with OAuth authentication to streamline email analysis. Users can retrieve emails from Gmail, select between multiple machine learning models, execute the phishing detection pipeline, review predictions in an interactive table, and visualize confusion matrices and performance metrics. The application provides a practical interface for testing and comparing phishing detection models on real email data.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics -->
+    <div class="content-block">
+      <div class="content-block-title">Core Metrics & Results</div>
+      <div class="metrics-grid">
+        <div class="metric-card amber-border" style="border-left-color:var(--amber)">
+          <div class="metric-val yellow">97.7<span class="metric-unit">%</span></div>
+          <div class="metric-label">LOGISTIC REGRESSION ACCURACY</div>
+        </div>
+        <div class="metric-card amber-border" style="border-left-color:var(--amber)">
+          <div class="metric-val yellow">99.1<span class="metric-unit">%</span></div>
+          <div class="metric-label">RANDOM FOREST PRECISION</div>
+        </div>
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">97.0<span class="metric-unit">%</span></div>
+          <div class="metric-label">LOGISTIC REGRESSION RECALL</div>
+        </div>
+        <div class="metric-card accent-border">
+          <div class="metric-val blue">49,628</div>
+          <div class="metric-label">LABELED EMAILS IN DATASET</div>
+        </div>
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">8</div>
+          <div class="metric-label">MODELS TRAINED & EVALUATED</div>
+        </div>
+        <div class="metric-card emerald-border">
+          <div class="metric-val green">20<span class="metric-unit">+</span></div>
+          <div class="metric-label">PHISHING FEATURES ENGINEERED</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="content-block">
+      <div class="content-block-title">Technologies Used</div>
+      <div class="tech-grid">
+        <span class="tech-chip"><i class="ti ti-brand-python" style="color:#3776ab"></i> Python</span>
+        <span class="tech-chip"><i class="ti ti-brain" style="color:var(--accent)"></i> Scikit-learn</span>
+        <span class="tech-chip"><i class="ti ti-chart-bar" style="color:var(--amber)"></i> Pandas</span>
+        <span class="tech-chip"><i class="ti ti-calculator" style="color:var(--amber)"></i> NumPy</span>
+        <span class="tech-chip"><i class="ti ti-chart-line" style="color:var(--accent)"></i> Matplotlib</span>
+        <span class="tech-chip"><i class="ti ti-chart-dots" style="color:var(--accent)"></i> Seaborn</span>
+        <span class="tech-chip"><i class="ti ti-math-function" style="color:var(--emerald)"></i> TF-IDF</span>
+        <span class="tech-chip"><i class="ti ti-mail" style="color:var(--emerald)"></i> Gmail API</span>
+        <span class="tech-chip"><i class="ti ti-layout" style="color:var(--text2)"></i> Tkinter</span>
+        <span class="tech-chip"><i class="ti ti-git-branch" style="color:var(--accent)"></i> Git / GitHub</span>
+      </div>
+    </div>
+
+    <!-- GitHub CTA -->
+    <div class="github-cta">
+      <div class="github-cta-text">
+        <p>Explore the Source Code</p>
+        <span>Full research codebase on GitHub</span>
+      </div>
+      <a href="https://github.com/AgustinaLorda/Phishing-Email-Detector" target="_blank" class="btn btn-ghost btn-lg">
+        <i class="ti ti-brand-github"></i>
+        View on GitHub
+        <i class="ti ti-external-link" style="font-size:0.85rem;"></i>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
