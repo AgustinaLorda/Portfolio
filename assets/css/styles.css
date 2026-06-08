@@ -1334,6 +1334,16 @@ footer {
   .hero-terminal { display: none !important; }
   .github-cta { flex-direction: column; }
   .metric-val { font-size: 1.8rem; }
+
+  .video-showcase-container {
+    flex-direction: column;
+  }
+
+  .video-showcase,
+  .showcase-image {
+    flex: 1 1 100%;
+    width: 100%;
+  }
 }
 
 /* ── SCROLL FADE IN ── */
